@@ -1,0 +1,278 @@
+
+:root {
+    --colorclaro: #A75D5D;
+    --colorboton: #A75D5D;
+}
+
+* {
+    font-size: 20px;
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F2ECBE;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #E2C799;
+    color: #863e3e;
+    padding: 20px;
+    text-align: center;
+    
+}
+
+
+.title{
+    margin: 0;
+    padding: 0;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 50px;
+}
+
+
+.eslogan{
+    margin: 20px 0;
+    font-family: 'Mynerve', cursive;
+    
+}
+
+.seccion{
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Estilos para el menu de navegacion */
+nav {
+    background-color: #C08261;
+    color: #F2ECBE;
+    text-align: center;
+    padding: 10px 0;
+    z-index: 1;
+    height: 70px;
+   
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+   
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+
+nav a {
+    text-decoration: none;
+    color: #F2ECBE;
+}
+
+
+.carousel{
+    margin: 50px;
+}
+
+
+
+
+.grupo-tarjetas {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .titulo{
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: center;
+    margin-bottom: 1.5em;
+    background-color: #E2C799;
+    padding: 0.4em;
+    text-decoration: underline #F2ECBE 0.1em;
+    /* SEPARA EL SUBRAYADO DEL TEXTO */
+    text-underline-offset: 0.2em;
+  }
+ 
+
+
+  .card {
+    width: calc(33.33% - 20px); 
+    margin-bottom: 10px; 
+    padding: 5px;
+    margin: 35px;
+  }
+
+
+  .card-title{
+    font-family: 'Mynerve', cursive;
+    text-align: center;
+  }
+
+
+
+  .informacion-container{
+    font-family: 'Bebas Neue', sans-serif;  
+    text-align: center;
+}
+
+
+.contacto-container{
+    justify-items: center;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+
+.form-reservas {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    background-color: var(--colorclaro);
+    padding: 30px;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+
+}
+
+
+.form-reservas label {
+    display: block; 
+    font-family: 'Raleway', sans-serif;
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.form-reservas label[for="Horario"],
+.form-reservas label[for="menu"] {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 0;
+}
+
+/*PARA QUE SE VEA UNO AL LADO DEL OTRO*/
+.form-reservas label[for="Horario"] input,
+.form-reservas label[for="menu"] input {
+  margin: 0;
+}
+
+
+.form-reservas input[type="text"],
+.form-reservas input[type="email"],
+.form-reservas input[type="date"],
+.form-reservas textarea {
+  width: 50%; 
+  padding: 10px; 
+}
+
+
+
+
+
+
+#enviar {
+    background-color: var(--colorboton)
+   
+}
+
+#enviar:hover{
+    background-color: #FFC3A1;    
+}
+
+
+/* estilo para el boton flotante */
+.reserva-mesa {
+    position:fixed;
+    bottom: 20px; 
+    right: 20px; 
+    background-color: #FFC3A1; 
+    color: #A75D5D; 
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    z-index: 9999; /* Asegura que el boton este en la capa superior */
+}
+
+
+.reserva-mesa a {
+    color: #A75D5D;
+    text-decoration: none;
+}
+
+
+.reserva-mesa:hover {
+    background-color: #E2C799; 
+    /* cambia de color al pasar el mouse por encima */
+}
+
+
+
+
+/*FOOTER*/
+.pie-pagina{
+
+    background-color: #E2C799;
+    
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-pagina .grupo-1 .bloque h2{
+    color: #A75D5D;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie-pagina .grupo-1 .bloque p{
+    color: #9A3B3B;
+    margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #9A3B3B;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    color:  #FFC3A1;
+}
+.pie-pagina .grupo-2{
+    background-color: #9A3B3B;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+
+
+
+
