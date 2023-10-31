@@ -23,7 +23,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Acme&family=Josefin+Sans:ital,wght@0,100;0,400;1,300;1,400&family=Kalam&family=Raleway:ital,wght@0,100;0,300;1,200&display=swap"
         rel="stylesheet">
-   
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
@@ -190,6 +190,16 @@
                     <input type="radio" name="Horario" value="Cena" id="Cena">
                 </label>
             </label>
+
+            <label for="CantidadPersonas">Cantidad de Personas:</label>
+            <select name="CantidadPersonas" id="CantidadPersonas" required>
+                <option value="" disabled selected>Selecciona la cantidad de personas</option>
+                <option value="1">1 persona</option>
+                <option value="2">2 personas</option>
+                <option value="3">3 personas</option>
+                <option value="4">4 personas</option>
+                <option value="5">5 o mas personas</option>
+            </select>
 
 
             <label for="menu">Seleccione menú especial si es necesario:
