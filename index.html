@@ -1,311 +1,282 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
-    <title>La Herencia Restaurante</title>
-    <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-
-    <script src="https://kit.fontawesome.com/a8ae4da2c5.js" crossorigin="anonymous"></script>
-
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Herencia - Restaurante</title>
+    
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/a8ae4da2c5.js" crossorigin="anonymous"></script>
 
-    <link
-        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:ital,wght@0,100;0,400;1,300;1,400&family=Kalam&display=swap"
-        rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,400;1,300;1,400&family=Kalam&family=Mynerve&family=Raleway:ital,wght@0,100;0,300;1,200&display=swap"
-        rel="stylesheet">
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=Acme&family=Josefin+Sans:ital,wght@0,100;0,400;1,300;1,400&family=Kalam&family=Raleway:ital,wght@0,100;0,300;1,200&display=swap"
-        rel="stylesheet">
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-
-
-    <link rel="stylesheet" href="style.css">
-
-</head>
-
+    </head>
 <body>
-
-    <header>
-
-        <h1 class="title"> LA HERENCIA - Restaurante</h1>
-        <h6 class="eslogan">El sabor de la tradición en cada plato. </h6>
-
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <h1 class="title">LA HERENCIA</h1>
+            <p class="eslogan">El sabor de la tradición en cada plato</p>
+        </div>
     </header>
-    <nav>
-        <ul>
-            <li class="seccion"><a href="#inicio">INICIO</a></li>
-            <li class="seccion"><a href="#chef">RECOMENDACIONES DEL CHEF</a></li>
-            <li class="seccion"><a href="#contacto">CONTACTO</a></li>
 
-        </ul>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#chef">Recomendaciones del Chef</a></li>
+                <li><a href="#reservas">Reservas</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
     </nav>
 
-    <section id="inicio">
-        <div id="carouselExample" class="carousel slide">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="./imagenes/resto.jpg" class="d-block w-100" alt="imagen del Restaurante">
-                </div>
-                <div class="carousel-item">
-                    <img src="./imagenes/familia.jpg" class="d-block w-100" alt="familia cenando">
-                </div>
-                <div class="carousel-item">
-                    <img src="./imagenes/pareja--brindando.jpg" class="d-block w-100" alt="pareja brindando">
-                </div>
-                <div class="carousel-item">
-                    <img src="./imagenes/cocineros.jpg" class="d-block w-100" alt="pareja brindando">
-                </div>
-                <div class="carousel-item">
-                    <img src="./imagenes/chefs.jpg" class="d-block w-100" alt="pareja brindando">
-                </div>
-
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-    </section>
-
-
-
-    <div class="reserva-mesa">
-        <a href="#form-reservas">Reservar Mesa</a>
-    </div>
-
-
-    <section id="chef">
-        <h1 class="titulo">Recomendaciones del Chef</h1>
-        <div class="grupo-tarjetas">
-            <div class="card" style="width: 18rem;">
-                <img src="./imagenes/filete-ternera-papas-fritas.jpg" class="card-img-top"
-                    alt="Filete de ternera con papas fritas">
-                <div class="card-body">
-                    <h5 class="card-title">Filete de ternera con papas fritas</h5>
-
-
+    <!-- Hero Carousel -->
+    <section id="inicio" class="carousel-container">
+        <div class="carousel">
+            <div class="carousel-item active">
+                <img src="/placeholder.svg?height=600&width=1200" alt="Restaurante elegante">
+                <div class="carousel-overlay">
+                    <div class="carousel-content">
+                        <h2>Bienvenidos a La Herencia</h2>
+                        <p>Donde cada plato cuenta una historia de tradición y excelencia culinaria</p>
+                    </div>
                 </div>
             </div>
-
-
-            <div class="card" style="width: 18rem;">
-                <img src="./imagenes/sorrentinos.jpg" class="card-img-top" alt="Sorrentinos">
-                <div class="card-body">
-                    <h5 class="card-title">Sorrentinos con salsa y queso</h5>
-
-
+            <div class="carousel-item">
+                <img src="/placeholder.svg?height=600&width=1200" alt="Familia cenando">
+                <div class="carousel-overlay">
+                    <div class="carousel-content">
+                        <h2>Momentos Inolvidables</h2>
+                        <p>Creamos experiencias gastronómicas que perduran en el tiempo</p>
+                    </div>
                 </div>
             </div>
-
-
-            <div class="card" style="width: 18rem;">
-                <img src="./imagenes/salmon-conSalsa.jpg" class="card-img-top" alt="Salmon rosado en salsa verde">
-                <div class="card-body">
-                    <h5 class="card-title">Salmon rosado en salsa verde</h5>
-
-
-                </div>
-            </div>
-        </div>
-
-
-        <div class="grupo-tarjetas">
-
-            <div class="card" style="width: 18rem;">
-                <img src="./imagenes/brownie-.jpg" class="card-img-top" alt="Postre Brownie">
-                <div class="card-body">
-                    <h5 class="card-title">Brownie</h5>
-
-
-                </div>
-            </div>
-
-
-            <div class="card" style="width: 18rem;">
-                <img src="./imagenes/lemon pie.jpg" class="card-img-top" alt="Postre Lemon Pie">
-                <div class="card-body">
-                    <h5 class="card-title">Lemon Pie</h5>
-
-
-                </div>
-            </div>
-
-
-            <div class="card" style="width: 18rem;">
-                <img src="./imagenes/postre-tiramissu.jpg" class="card-img-top" alt="Postre Tiramissu">
-                <div class="card-body">
-                    <h5 class="card-title">Tiramissu</h5>
-
-
-                </div>
-            </div>
-        </div>
-
-
-    </section>
-
-
-    <section class="form-reservas" id="form-reservas">
-        <form action="https://formspree.io/f/mzbloovw" method="post">
-
-
-            <label for="" class="titulo">Realiza tu reserva con anticipacion:</label>
-
-
-            <label for="NombreUsuario">Nombre
-
-
-                <input type="text" name="NombreUsuario" id="NombreUsuario" required>
-            </label>
-
-
-            <label for="Apellido">Apellido
-                <input type="text" name="Apellido" id="Apellido" required>
-            </label>
-
-
-            <label for="email">Email
-                <input type="email" name="email" id="email" placeholder="ejemplo@gmail.com" required>
-            </label>
-            <label for="Horario">Seleccione un Horario:
-                <label for="Almuerzo">Almuerzo
-                    <input type="radio" name="Horario" value="Almuerzo" id="Almuerzo">
-                </label>
-
-
-                <label for="Cena">Cena
-                    <input type="radio" name="Horario" value="Cena" id="Cena">
-                </label>
-            </label>
-
-            <label for="CantidadPersonas">Cantidad de Personas:</label>
-            <select name="CantidadPersonas" id="CantidadPersonas" required>
-                <option value="" disabled selected>Selecciona la cantidad de personas</option>
-                <option value="1">1 persona</option>
-                <option value="2">2 personas</option>
-                <option value="3">3 personas</option>
-                <option value="4">4 personas</option>
-                <option value="5">5 o mas personas</option>
-            </select>
-
-            <label for="menu">Seleccione menú especial si es necesario:
-
-
-                <label for="vegetariano"> Vegetariano
-                    <input type="checkbox" name="menu" id="vegetariano" value="vegetariano">
-                </label>
-
-
-                <label for="veggie"> Vegano
-                    <input type="checkbox" name="menu" id="veggie" value="veggie">
-                </label>
-
-
-                <label for="sintacc"> Sin Tacc
-                    <input type="checkbox" name="menu" id="sintacc" value="sintacc">
-                </label>
-            </label>
-
-
-            <label for="FechaRes">Ingrese la fecha que desea reservar:
-                <input type="date" name="FechaRes" id="FechaRes">
-
-
-            </label>
-
-
-            <label for="Comentarios">Ingrese un comentario:
-                <textarea name="ComentarioUsuario" id="Comentarios" maxlength="4" minlength="3"
-                    placeholder="Ingrese un comentario."></textarea>
-            </label>
-
-
-            <input type="submit" value="Enviar" id="enviar">
-
-        </form>
-
-    </section>
-
-
-    <section id="contacto">
-        <div class="informacion-container">
-            <div class="row justify-content-center">
-                <div class="col-lg-3 py-2 border-right">
-                    <h2 style="text-align: center;"><i class="fa-solid fa-location-dot" style="font-size: 36px;"></i>
-                    </h2>
-                    <h4 class="titulo">Ubicación</h4>
-                    <p>Obispo Ferreyra 692.</p>
-                    <p>Villa del Rosario, Córdoba.</p>
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54395.865168052966!2d-63.572745450271135!3d-31.558706155145426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94332a53b2697ec9%3A0x37f3384e4293f013!2sVilla%20del%20Rosario%2C%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1698376933815!5m2!1ses-419!2sar"
-                        width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
-                </div>
-                <div class="col-lg-3 py-2 border-right">
-                    <h2 style="text-align: center;"><i class="fa-solid fa-phone" style="font-size: 36px;"></i></h2>
-                    <h4 class="titulo">Teléfonos:</h4>
-                    <p>(3573) 440325</p>
-                    <p>(3573) 551435</p>
-                </div>
-                <div class="col-lg-3 py-2">
-                    <h2 style="text-align: center;"><i class="fa-solid fa-clock" style="font-size: 36px;"></i></h2>
-                    <h4 class="titulo">Horarios:</h4>
-                    <p>Abiertos todos los días:</p>
-                    <p>11:30 a 16 hs - 18:30hs a 1:00hs</p>
+            <div class="carousel-item">
+                <img src="/placeholder.svg?height=600&width=1200" alt="Pareja brindando">
+                <div class="carousel-overlay">
+                    <div class="carousel-content">
+                        <h2>Celebra con Nosotros</h2>
+                        <p>El lugar perfecto para tus momentos más especiales</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Floating Reserve Button -->
+    <a href="#reservas" class="reserva-mesa">Reservar Mesa</a>
 
-
-    <footer class="pie-pagina">
-        <div class="grupo-1">
-
-            <div class="bloque">
-                <h2>SOBRE NOSOTROS</h2>
-                <p>Nuestra misión es fusionar tradición y creatividad en cada plato,</p>
-                <p>brindando a nuestros comensales una experiencia gastronómica única y memorable.</p>
+    <!-- Chef Recommendations -->
+    <section id="chef" class="section fade-in">
+        <h2 class="section-title">Recomendaciones del Chef</h2>
+        
+        <div class="menu-grid">
+            <div class="menu-card">
+                <img src="./imagenes/filete-ternera-papas-fritas.jpg" alt="Filete de ternera">
+                <div class="menu-card-content">
+                    <h3>Filete de Ternera Premium</h3>
+                    <p>Jugoso filete de ternera acompañado de papas fritas artesanales y salsa especial de la casa</p>
+                </div>
             </div>
-            <div class="bloque">
-                <h2>SEGUINOS EN NUESTRAS REDES</h2>
-                <div class="red-social">
-                    <a href="https://www.facebook.com/institutosuperior.villadelrosario.5" class="fa fa-facebook"
-                        target="_blank"></a>
-                    <a href="https://www.instagram.com/i.s.v.d.r/" class="fa fa-instagram" target="_blank"></a>
-                    <a href="https://twitter.com/" class="fa fa-twitter" target="_blank"></a>
-
+            
+            <div class="menu-card">
+                <img src="./imagenes/sorrentinos.jpg" alt="Sorrentinos">
+                <div class="menu-card-content">
+                    <h3>Sorrentinos de la Casa</h3>
+                    <p>Deliciosos sorrentinos rellenos de ricota y espinaca, bañados en nuestra salsa signature</p>
+                </div>
+            </div>
+            
+            <div class="menu-card">
+                <img src="./imagenes/salmon-conSalsa.jpg" alt="Salmón rosado">
+                <div class="menu-card-content">
+                    <h3>Salmón en Salsa Verde</h3>
+                    <p>Salmón rosado grillado a la perfección, acompañado de nuestra exclusiva salsa verde de hierbas</p>
+                </div>
+            </div>
+            
+            <div class="menu-card">
+                <img src="./imagenes/brownie-.jpg" alt="Brownie">
+                <div class="menu-card-content">
+                    <h3>Brownie Artesanal</h3>
+                    <p>Brownie de chocolate belga con helado de vainilla y salsa de caramelo casera</p>
+                </div>
+            </div>
+            
+            <div class="menu-card">
+               <img src="./imagenes/lemon pie.jpg"  alt="Lemon Pie">
+                <div class="menu-card-content">
+                    <h3>Lemon Pie Tradicional</h3>
+                    <p>Clásico lemon pie con merengue italiano y base de masa quebrada, receta familiar</p>
+                </div>
+            </div>
+            
+            <div class="menu-card">
+                 <img src="./imagenes/postre-tiramissu.jpg"  alt="Tiramisú">
+                <div class="menu-card-content">
+                    <h3>Tiramisú Italiano</h3>
+                    <p>Auténtico tiramisú italiano con mascarpone, café espresso y cacao en polvo</p>
                 </div>
             </div>
         </div>
-        <div class="grupo-2">
-            <small>&copy; 2023 <b>La Herencia</b> - Todos los Derechos Reservados.</small>
+    </section>
 
+    <!-- Reservation Form -->
+    <section id="reservas" class="form-section">
+        <div class="form-container fade-in">
+            <h2 class="section-title">Realiza tu Reserva</h2>
+            
+            <form action="https://formspree.io/f/mzbloovw" method="post">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="apellido">Apellido</label>
+                        <input type="text" id="apellido" name="apellido" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="ejemplo@gmail.com" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="fecha">Fecha de Reserva</label>
+                        <input type="date" id="fecha" name="fecha" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="personas">Cantidad de Personas</label>
+                        <select id="personas" name="personas" required>
+                            <option value="" disabled selected>Selecciona la cantidad</option>
+                            <option value="1">1 persona</option>
+                            <option value="2">2 personas</option>
+                            <option value="3">3 personas</option>
+                            <option value="4">4 personas</option>
+                            <option value="5+">5 o más personas</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Horario Preferido</label>
+                        <div class="checkbox-group">
+                            <div class="checkbox-item">
+                                <input type="radio" id="almuerzo" name="horario" value="almuerzo">
+                                <label for="almuerzo">Almuerzo</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="radio" id="cena" name="horario" value="cena">
+                                <label for="cena">Cena</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label>Menús Especiales</label>
+                    <div class="checkbox-group">
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="vegetariano" name="menu[]" value="vegetariano">
+                            <label for="vegetariano">Vegetariano</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="vegano" name="menu[]" value="vegano">
+                            <label for="vegano">Vegano</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="sintacc" name="menu[]" value="sintacc">
+                            <label for="sintacc">Sin TACC</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="comentarios">Comentarios Adicionales</label>
+                    <textarea id="comentarios" name="comentarios" rows="4" placeholder="Algún comentario especial para tu reserva..."></textarea>
+                </div>
+                
+                <button type="submit" class="submit-btn">Confirmar Reserva</button>
+            </form>
+        </div>
+    </section>
 
+    <!-- Contact Section -->
+    <section id="contacto" class="section fade-in">
+        <h2 class="section-title">Contacto</h2>
+        
+        <div class="contact-grid">
+            <div class="contact-card">
+                <div class="contact-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <h3>Ubicación</h3>
+                <p>San Martín<br>Córdoba, Argentina</p>
+            </div>
+            
+            <div class="contact-card">
+                <div class="contact-icon">
+                    <i class="fas fa-phone"></i>
+                </div>
+                <h3>Teléfonos</h3>
+                <p>(3333) 440325<br>(3333) 551435</p>
+            </div>
+            
+            <div class="contact-card">
+                <div class="contact-icon">
+                    <i class="fas fa-clock"></i>
+                </div>
+                <h3>Horarios</h3>
+                <p>Abiertos todos los días<br>11:30 a 16:00 hs<br>18:30 a 01:00 hs</p>
+            </div>
+        </div>
+        
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54395.865168052966!2d-63.572745450271135!3d-31.558706155145426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94332a53b2697ec9%3A0x37f3384e4293f013!2sVilla%20del%20Rosario%2C%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1698376933815!5m2!1ses-419!2sar"
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </section>
 
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Sobre Nosotros</h3>
+                <p>Nuestra misión es fusionar tradición y creatividad en cada plato, brindando a nuestros comensales una experiencia gastronómica única y memorable que perdure en el tiempo.</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Síguenos</h3>
+                <p>Mantente conectado con nosotros en nuestras redes sociales para conocer las últimas novedades y promociones especiales.</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com" target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://twitter.com" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 La Herencia - Todos los Derechos Reservados.</p>
         </div>
     </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
-
-
-
-</body>
-
+  <script src="script.js"></script>
+    </body>
 </html>
